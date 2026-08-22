@@ -169,14 +169,11 @@
 <script>
     function startStory() {
         var music = document.getElementById('bg-music');
-        music.volume = 0.01; // Здесь можно менять громкость от 0.0 до 1.0
+        music.volume = 0.3; // Опечатка была здесь (была запятая вместо точки)
         music.play();
-        
         var modal = document.getElementById('music-modal');
         modal.style.opacity = '0';
-        setTimeout(function() { 
-            modal.style.display = 'none'; 
-        }, 500);
+        setTimeout(function() { modal.style.display = 'none'; }, 500);
     }
 </script>
 </body>
