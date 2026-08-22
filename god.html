@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Скрытый сценарий: Годовщина]</title>
+    <style>
+        :root {
+            --bg-color: #0d0f12;
+            --text-color: #e2e8f0;
+            --system-color: #00ffcc;
+            --accent-color: #ff3366;
+            --box-bg: #161a22;
+            --border-color: #242b35;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.8; margin: 0; padding: 0;
+            display: flex; justify-content: center;
+        }
+        #music-modal {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(13, 15, 18, 0.95); display: flex;
+            justify-content: center; align-items: center; z-index: 9999;
+            transition: opacity 0.5s ease;
+        }
+        .modal-content {
+            background-color: var(--box-bg); border: 2px solid var(--system-color);
+            padding: 30px; border-radius: 8px; text-align: center;
+            max-width: 400px; width: 85%; box-shadow: 0 0 20px rgba(0, 255, 204, 0.2);
+        }
+        .container { max-width: 700px; width: 90%; padding: 40px 20px; }
+        h1 {
+            color: var(--accent-color); text-align: center; font-size: 2.2rem;
+            margin-bottom: 30px; text-transform: uppercase; letter-spacing: 2px;
+            text-shadow: 0 0 10px rgba(255, 51, 102, 0.3);
+        }
+        h2 {
+            color: var(--system-color); font-size: 1.5rem; margin-top: 40px;
+            border-bottom: 1px solid var(--border-color); padding-bottom: 10px;
+        }
+        p { font-size: 1.1rem; margin-bottom: 20px; text-align: justify; }
+        .system-alert {
+            background-color: var(--box-bg); border-left: 4px solid var(--system-color);
+            border-right: 1px solid var(--border-color); border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color); padding: 20px; margin: 30px 0;
+            border-radius: 0 8px 8px 0; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        }
+        .system-title {
+            color: var(--system-color); font-weight: bold; text-transform: uppercase;
+            letter-spacing: 1px; margin-bottom: 10px; display: flex; align-items: center;
+        }
+        .system-title::before { content: "◆ "; margin-right: 8px; }
+        ul { list-style-type: none; padding-left: 0; }
+        li { position: relative; padding-left: 20px; margin-bottom: 12px; font-size: 1.05rem; }
+        li::before { content: "•"; color: var(--accent-color); position: absolute; left: 0; font-size: 1.3rem; top: -2px; }
+        .highlight { color: var(--system-color); font-weight: 600; }
+        .footer-buttons { display: flex; justify-content: center; gap: 20px; margin-top: 50px; }
+        .btn {
+            background-color: transparent; border: 2px solid var(--system-color);
+            color: var(--system-color); padding: 12px 30px; font-size: 1.1rem;
+            font-weight: bold; cursor: pointer; border-radius: 5px;
+            transition: all 0.3s ease; text-transform: uppercase;
+        }
+        .btn:hover { background-color: var(--system-color); color: var(--bg-color); box-shadow: 0 0 15px var(--system-color); }
+    </style>
+</head>
+<body>
+
+<audio id="bg-music" loop><source src="bts-feat.-halsey-boy-with-luv.mp3" type="audio/mpeg"></audio>
+
+<div id="music-modal">
+    <div class="modal-content">
+        <div class="system-title" style="justify-content: center; margin-bottom: 20px;">Загрузка Системы</div>
+        <p style="text-align: center; font-size: 1rem; margin-bottom: 25px;">Обнаружена скрытая аудиодорожка фандома. Разрешить воспроизведение OST вашей жизни?</p>
+        <button class="btn" onclick="startStory()">Активировать</button>
+    </div>
+</div>
+
+<div class="container">
+    <h1>[Скрытый сценарий: Первый том Ситцевой эпохи]</h1>
+    <div class="system-alert">
+        <div class="system-title">Системное уведомление</div>
+        <strong>Тип сценария:</strong> Персональный / Сверхсекретный<br>
+        <strong>Сложность:</strong> S-ранг<br>
+        <strong>Время до завершения:</strong> Вся жизнь
+    </div>
+
+    <h2>[Введение: Проклятие пяти часов утра]</h2>
+    <p>В мире существовали миллионы историй. Великие веб-новеллы насчитывали тысячи глав, а фанфики на Фикбуке пугали случайных прохожих своими объемами и запутанными пэрингами. Большинство людей использовали ночь для того, чтобы восстанавливать шкалу здоровья. Но только не Она.</p>
+    <p>Когда стрелки часов перешагивали за полночь, в комнате активировался скрытый режим. Тихий шелест страниц (или едва заметное свечение экрана смартфона) сигнализировал о том, что Читательница вышла на охоту за новыми сюжетами. Она могла часами путешествовать по Средиземью, спорить с распределительной шляпой Хогвартса, сопереживать Се Ляню и Хуа Чэну или замирать от восторга, следя за тем, как Ким Докча в очередной раз переигрывает саму судьбу во «Всеведущем читателе».</p>
+    <p>Она не замечала времени. Но кое-кто в этой комнате не спал тоже.</p>
+
+    <div class="system-alert">
+        <div class="system-title">Внимание! Пассивный навык «Наблюдатель» повышен до максимума</div>
+        Муж способен по малейшему изменению выражения её лица определить, какой именно троп сейчас происходит в фанфике — от флаффа до жесткого ангста.
+    </div>
+    <p>Он сидел рядом, делал вид, что спит, но на самом деле думал: среди всех вымышленных персонажей и идеальных героев дорам, его главная миссия — оберегать ту, которая умеет так искренне любить чужие миры. И именно в эту секунду Система выдала новое оповещение.</p>
+
+    <div class="system-alert">
+        <div class="system-title">Системное сообщение</div>
+        Ровно 365 дней назад вы заключили контракт «Брак». Условия контракта выполнены на 100%. Начинается загрузка праздничного обновления...
+    </div>
+
+    <h2>[Глава 1. Пушистый надзиратель и геймерские хроники]</h2>
+    <p>Жизнь после заключения брака оказалась далека от суровых испытаний «Властелина колец», где нужно было нести кольцо в Мордор. Скорее, это была корейская романтическая дорама, смешанная с симулятором выживания. Каждый день начинался с проверки боевой готовности.</p>
+    <div class="system-alert">
+        <div class="system-title">Обнаружен элитный монстр локации: Кот Локи</div>
+        <strong>Статус:</strong> Постоянный компаньон, требующий дань в виде корма.<br>
+        <strong>Особое умение:</strong> Сверлить осуждающим взглядом в режиме 24/7 и ложиться именно на ту руку, которой Читательница держит телефон.
+    </div>
+    <div class="system-alert">
+        <div class="system-title">Внимание! Обнаружен союзник на дальней дистанции</div>
+        <strong>Имя:</strong> Собака Ванесса.<br>
+        <strong>Локация:</strong> Деревня у мамы.<br>
+        <strong>Статус:</strong> Ждет возвращения главных героев для совместных прогулок.
+    </div>
+    <p>Когда реальный мир становился слишком предсказуемым, они переносились в другие измерения. Компьютерные игры стали их общим полем битвы и уюта:</p>
+    <ul>
+        <li>В <span class="highlight">Minecraft</span> и <span class="highlight">Sims 3 и 4</span> они строить идеальные дома, проверяя на прочность свои дизайнерские вкусы.</li>
+        <li>В суровых мирах <span class="highlight">Enshrouded</span> и <span class="highlight">Necesse</span> они прикрывали друг другу спины, отбиваясь от монстров, как настоящая сыгранная пати.</li>
+        <li>А когда хотелось чего-то мрачного и атмосферного, она погружалась в визуальную новеллу <span class="highlight">«Зайчик»</span>, кутаясь в плед от зимней мистики.</li>
+    </ul>
+
+    <h2>[Глава 2. Музыкальный OST и кулинарные слабости]</h2>
+    <p>Если бы по их первому году брака снимали сериал, кастинг-директора сериалов <em>Glee</em> и <em>Camp Rock</em> сошли бы с ума от зависти. Музыка в их доме не умолкала никогда. Медленный, атмосферные и чувственные аккорды <span class="highlight">The Neighbourhood</span> могли мгновенно смениться безупречным, парящим вокалом <span class="highlight">Selena Gomez</span>.</p>
+    <p>Но главной силой, заставляющей сердце Читательницы биться чаще, были они — <span class="highlight">BTS</span>. Семь парней из Сеула знали толк в стиле, но даже их лучшие хореографии не могли сравниться с тем, как она сияла, когда включала свои любимые треки.</p>
+    <div class="system-alert">
+        <div class="system-title">Запущен кулинарный квест «Порадуй жену»</div>
+        • Ингредиент 1: Красная рыбка (повышает настроение на 50%).<br>
+        • Ингредиент 2: Горячая, сочная долма (полностью восстанавливает шкалу сытости).<br>
+        • Ингредиент 3: Спелый инжир (дает бафф «Эстетическое удовольствие»).<br>
+        • Секретное оружие: Вкусняшки, безалкогольное пиво и рыбка.
+    </div>
+    <h2>[Глава 3. Великое пророчество: Проект «Stardew Valley в реальной жизни»]</h2>
+    <div class="system-alert">
+        <div class="system-title">Доступно глобальное обновление карты. Хотите заглянуть в будущее?</div>
+        <strong>Выбор:</strong> Да / Конечно, да
+    </div>
+    <p>Самая красивая и заветная история этой вселенной еще не была написана на Фикбуке. Она зрела в их мыслях. Это была мечта о будущем. О будущем, где вместо шумного города их будет встречать тихий шуршащий рассвет в деревне. Система уже визуализировала этот план:</p>
+    <ul>
+        <li><span class="highlight">Локация:</span> Уютный деревянный дом с большой верандой, где можно читать книги под открытым небом.</li>
+        <li><span class="highlight">Огород:</span> Бесконечные грядки, где Читательница своими руками будет сажать диковинные овощи, ухаживать за кустами инжира и любоваться цветами.</li>
+        <li><span class="highlight">Живность:</span> Небольшой курятник с суетливыми курочками и загон для маленьких, ласковых козочек, которые будут прыгать вокруг и просить траву.</li>
+    </ul>
+
+    <h2>[Эпилог. Послание от Персонального Героя]</h2>
+    <div class="system-alert">
+        <div class="system-title">Внимание! Обнаружено аномальное время суток (04:15 утра)</div>
+        <strong>Статус Читателя:</strong> Глаза слипаются, но статус дебаффа «еще одна глава и точно спать» активен.
+    </div>
+    <p>Моя любимая Читательница. Ты прочитала сотни фанфиков о любви, где герои преодолевали горы, дрались на дуэлях и совершали безумные поступки. Но я хочу, чтобы ты знала: самая реальная, крепкая и преданная любовь — здесь, в этой комнате.</p>
+    <p>Я, возможно, не пишу тексты так же красиво, как авторы твоих любимых новелл. Я не умею танцевать как парни из BTS и не обладаю магией Гарри Поттера. Но я обладаю кое-чем более сильным. Я тот, кто всегда будет рядом в реальном мире. Тот, кто разделит с тобой грядку в будущей деревне, покормит Локи, обнимет тебя холодной ночью и купит самый вкусный инжир.</p>
+    <p>Спасибо тебе за этот потрясающий, первый, наш ситцевый год. Мы прошли первый уровень этой игры, и впереди нас ждет еще бесконечное множество глав.</p>
+    <p>А теперь, пожалуйста, засыпай. Твой персональный Драко Малфой очень ждет твоих объятий.</p>
+
+    <div class="system-alert">
+        <div class="system-title">Сценарий «Год первый» успешно завершен!</div>
+        <strong>Ваша награда:</strong> Бесконечная любовь Мужа.
+    </div>
+
+    <div class="footer-buttons">
+        <button class="btn" onclick="alert('С годовщиной, любимая! Разблокирован Сценарий «Год второй» ❤️')">Перейти к году №2</button>
+    </div>
+</div>
+
+<script>
+    function startStory() {
+        var music = document.getElementById('bg-music');
+        music.volume = 0.01; // Здесь можно менять громкость от 0.0 до 1.0
+        music.play();
+        
+        var modal = document.getElementById('music-modal');
+        modal.style.opacity = '0';
+        setTimeout(function() { 
+            modal.style.display = 'none'; 
+        }, 500);
+    }
+</script>
+</body>
+</html>
